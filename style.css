@@ -1,0 +1,807 @@
+/* farver:
+   rød #561E21
+   creme #FCF9F5
+   lilla #ECE3E9
+   blå #A0BBD0
+   grøn #C7C6A2
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #FCF9F5;
+  color: #561E21;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+a {
+  color: #561E21;
+}
+
+.hvid {
+  background-color: white;
+}
+
+.tekst {
+  font-size: 36px;
+  line-height: 1.3;
+  margin-top: 30px;
+  max-width: 1200px;
+}
+
+
+/* ---------- MENU ---------- */
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 139px;
+  margin: 44px 27px 0 27px;
+  padding-left: 44px;
+  padding-right: 50px;
+  background-color: #ECE3E9;
+  border-radius: 70px;
+}
+
+.logo {
+  width: 272px;
+  mix-blend-mode: multiply;
+}
+
+.links a {
+  color: #494949;
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 60px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+  position: relative;
+  height: 796px;
+  overflow: hidden;
+}
+
+.hero-tekst {
+  position: relative;
+  z-index: 2;
+  width: 760px;
+  padding-top: 131px;
+  padding-left: 98px;
+}
+
+.hero h1 {
+  font-size: 64px;
+}
+
+.hero p {
+  font-size: 36px;
+  line-height: 1.35;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.knap {
+  display: inline-block;
+  padding: 20px 26px;
+  margin-right: 40px;
+  border: 3px solid #561E21;
+  border-radius: 13px;
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.mork {
+  background-color: #561E21;
+  color: white;
+}
+
+.knap:hover {
+  opacity: 0.8;
+}
+
+.tegning {
+  position: absolute;
+  top: 13px;
+  left: 667px;
+}
+
+.tegning img {
+  width: 1179px;
+  mix-blend-mode: multiply;
+}
+
+.boble {
+  position: absolute;
+  top: 311px;
+  left: 306px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+/* ---------- BREVKASSEN ---------- */
+
+.brevkassen {
+  border-top: 1px solid #DBDBDA;
+  padding-top: 53px;
+  padding-left: 101px;
+}
+
+.brevkassen h2 {
+  font-size: 57px;
+}
+
+.undertitel {
+  font-size: 35px;
+  font-style: italic;
+  margin-top: 30px;
+}
+
+.emner {
+  margin-top: 100px;
+  max-width: 1250px;
+}
+
+.emner button {
+  height: 92px;
+  padding-left: 38px;
+  padding-right: 38px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  background-color: transparent;
+  border: 3px solid #561E21;
+  border-radius: 16px;
+  color: #561E21;
+  font-size: 36px;
+}
+
+.emner button:hover {
+  background-color: #561E21;
+  color: white;
+}
+
+.emner input {
+  width: 595px;
+  height: 92px;
+  padding-left: 30px;
+  border: 3px solid #561E21;
+  border-radius: 16px;
+  font-size: 36px;
+  color: #561E21;
+}
+
+
+/* ---------- BREVENE ---------- */
+
+.breve {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 160px 56px 100px 59px;
+}
+
+.brev {
+  position: relative;
+  width: 48%;
+  margin-bottom: 180px;
+  padding: 30px 30px 30px 44px;
+  background-image: url("billeder/paper.jpg");
+  background-size: cover;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  color: #393A3E;
+  text-decoration: none;
+}
+
+a.brev {
+  color: #393A3E;
+}
+
+a.brev:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.skaev {
+  transform: rotate(-2deg);
+}
+
+.tape {
+  position: absolute;
+  top: -30px;
+  left: 245px;
+  width: 183px;
+  height: 58px;
+  background-color: #DBDBC5;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25);
+  transform: rotate(2deg);
+}
+
+.emne {
+  padding: 3px 14px;
+  border: 2px solid #494949;
+  border-radius: 14px;
+  font-size: 32px;
+}
+
+.brev h3 {
+  font-size: 36px;
+  margin-top: 35px;
+}
+
+.brev p {
+  font-size: 28px;
+  line-height: 1.7;
+  margin-top: 45px;
+}
+
+.fra {
+  text-align: right;
+  font-style: italic;
+}
+
+
+/* ---------- HJÆLP ---------- */
+
+.hjaelp {
+  border-top: 1px solid #DBDBDA;
+  padding: 60px 75px 120px 69px;
+}
+
+.hjaelp h2 {
+  font-size: 57px;
+}
+
+.kort-boks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.kort {
+  width: 49%;
+  overflow: auto;
+  min-height: 393px;
+  margin-bottom: 37px;
+  padding: 44px;
+  border-radius: 56px;
+}
+
+.lilla {
+  background-color: #ECE3E9;
+}
+
+.bla {
+  background-color: #A0BBD0;
+}
+
+.gron {
+  background-color: #C7C6A2;
+}
+
+.lille {
+  font-size: 24px;
+}
+
+.kort h3 {
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+.kort p {
+  font-size: 27px;
+  line-height: 1.5;
+  margin-top: 24px;
+  max-width: 540px;
+}
+
+.kort .lille {
+  margin-top: 0;
+}
+
+.stor {
+  font-size: 40px;
+}
+
+.kort .stor-tekst {
+  font-size: 36px;
+  line-height: 1.3;
+  max-width: 560px;
+}
+
+.lille-knap {
+  display: inline-block;
+  float: right;
+  margin-top: 30px;
+  padding: 20px 30px;
+  background-color: #561E21;
+  border-radius: 14px;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.lille-knap:hover {
+  opacity: 0.8;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+  background-color: #561E21;
+  color: white;
+}
+
+.footer-top {
+  display: flex;
+  padding: 55px 80px;
+}
+
+.footer-kolonne {
+  width: 300px;
+}
+
+.bred {
+  width: 557px;
+}
+
+.footer h2 {
+  font-size: 30px;
+}
+
+.graa {
+  color: #BBA5A6;
+  font-size: 26px;
+  line-height: 1.6;
+  margin-top: 8px;
+  width: 450px;
+}
+
+.kontakt {
+  font-size: 28px;
+  line-height: 2;
+  margin-top: 50px;
+}
+
+.footer h3 {
+  color: #BBA5A6;
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+
+.footer-kolonne a {
+  display: block;
+  color: white;
+  font-size: 26px;
+  line-height: 1.6;
+}
+
+.footer-bund {
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 80px;
+  background-color: #471417;
+  color: #A38A8B;
+  font-size: 18px;
+}
+
+.mini {
+  font-size: 13px;
+}
+
+
+/* ---------- BREV SIDEN ---------- */
+
+.brev-top {
+  padding: 74px 0 70px 105px;
+}
+
+.tilbage {
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.tilbage:hover {
+  text-decoration: underline;
+}
+
+.brev-top h1 {
+  font-size: 64px;
+  margin-top: 36px;
+}
+
+.brev-side {
+  position: relative;
+  overflow: hidden;
+  padding: 68px 77px 340px 82px;
+  background-color: #FCF9F5;
+}
+
+.brev-raekke {
+  display: flex;
+  align-items: flex-start;
+}
+
+.stort-brev {
+  position: relative;
+  width: 901px;
+  margin-right: 48px;
+  padding: 54px 59px 46px 59px;
+  background-image: url("billeder/paper.jpg");
+  background-size: cover;
+  color: #393A3E;
+}
+
+.stort-brev .tape {
+  top: -24px;
+  left: 341px;
+}
+
+.brev-hoved {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brev-hoved .fra {
+  font-size: 26px;
+}
+
+.stort-brev h3 {
+  font-size: 32px;
+  margin-top: 30px;
+}
+
+.stort-brev p {
+  font-size: 28px;
+  line-height: 1.65;
+  margin-top: 30px;
+}
+
+.stort-brev .hilsen {
+  text-align: right;
+  font-style: italic;
+}
+
+.side-boks {
+  flex: 1;
+  padding: 37px 40px 41px 31px;
+  background-color: #ECE3E9;
+  border-radius: 48px;
+}
+
+.haandskrift {
+  font-family: "Gochi Hand", cursive;
+}
+
+.side-boks h2 {
+  font-size: 48px;
+}
+
+.side-boks p {
+  font-size: 27px;
+  line-height: 1.45;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.side-boks .lille-knap {
+  float: none;
+}
+
+.svar {
+  max-width: 1240px;
+  padding-top: 64px;
+  padding-left: 23px;
+}
+
+.svar h2 {
+  font-size: 58px;
+  margin-bottom: 40px;
+}
+
+.svar p {
+  font-size: 28px;
+  line-height: 1.6;
+  margin-top: 30px;
+}
+
+.svar .afsender {
+  margin-top: 80px;
+}
+
+.svar .kh {
+  font-size: 40px;
+  line-height: 1.1;
+  margin-top: 16px;
+}
+
+.venner {
+  position: absolute;
+  right: -49px;
+  bottom: -223px;
+  width: 696px;
+  mix-blend-mode: multiply;
+}
+
+.mere {
+  padding: 74px 77px 120px 82px;
+  background-color: #FDFCF9;
+}
+
+.mere h2 {
+  font-size: 58px;
+}
+
+
+/* ---------- MOBIL ---------- */
+
+@media (max-width: 1100px) {
+
+  .menu {
+    height: auto;
+    margin: 12px;
+    padding: 14px 20px;
+    border-radius: 30px;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    width: 130px;
+  }
+
+  .links a {
+    font-size: 16px;
+    margin-left: 0;
+    margin-right: 14px;
+  }
+
+  .tekst {
+    font-size: 19px;
+  }
+
+  .hero {
+    height: auto;
+  }
+
+  .hero-tekst {
+    width: auto;
+    padding: 36px 16px 0 16px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 19px;
+    margin-bottom: 28px;
+  }
+
+  .knap {
+    padding: 12px 18px;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+
+  .tegning {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: -60px;
+  }
+
+  .tegning img {
+    width: 100%;
+  }
+
+  .boble {
+    top: 26%;
+    left: 26%;
+    font-size: 4vw;
+  }
+
+  .brevkassen {
+    padding: 40px 16px 0 16px;
+  }
+
+  .brevkassen h2, .hjaelp h2, .mere h2, .svar h2 {
+    font-size: 30px;
+  }
+
+  .undertitel {
+    font-size: 19px;
+    margin-top: 12px;
+  }
+
+  .emner {
+    margin-top: 28px;
+  }
+
+  .emner button {
+    height: 46px;
+    padding: 0 16px;
+    margin-right: 6px;
+    margin-bottom: 10px;
+    font-size: 17px;
+  }
+
+  .emner input {
+    width: 100%;
+    height: 46px;
+    font-size: 17px;
+  }
+
+  .breve {
+    padding: 60px 20px;
+  }
+
+  .brev {
+    width: 100%;
+    margin-bottom: 60px;
+    padding: 28px 22px 22px 22px;
+  }
+
+  .tape {
+    left: 30%;
+    width: 40%;
+    height: 40px;
+    top: -22px;
+  }
+
+  .emne {
+    font-size: 16px;
+  }
+
+  .brev h3 {
+    font-size: 22px;
+    margin-top: 18px;
+  }
+
+  .brev p {
+    font-size: 17px;
+    margin-top: 16px;
+  }
+
+  .hjaelp {
+    padding: 40px 16px 60px 16px;
+  }
+
+  .kort {
+    width: 100%;
+    min-height: 0;
+    margin-bottom: 16px;
+    padding: 24px;
+    border-radius: 28px;
+  }
+
+  .kort h3, .stor {
+    font-size: 22px;
+  }
+
+  .kort p, .kort .stor-tekst {
+    font-size: 17px;
+  }
+
+  .lille {
+    font-size: 15px;
+  }
+
+  .lille-knap {
+    padding: 12px 20px;
+    font-size: 18px;
+  }
+
+  .footer-top {
+    flex-wrap: wrap;
+    padding: 40px 20px;
+  }
+
+  .footer-kolonne {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  .bred {
+    width: 100%;
+  }
+
+  .graa, .kontakt, .footer-kolonne a {
+    font-size: 16px;
+    width: auto;
+  }
+
+  .footer h3 {
+    font-size: 15px;
+  }
+
+  .footer-bund {
+    display: block;
+    padding: 14px 20px;
+    font-size: 13px;
+  }
+
+  .brev-top {
+    padding: 28px 16px 32px 16px;
+  }
+
+  .tilbage {
+    font-size: 17px;
+  }
+
+  .brev-top h1 {
+    font-size: 32px;
+  }
+
+  .brev-side {
+    padding: 48px 16px 200px 16px;
+  }
+
+  .brev-raekke {
+    display: block;
+  }
+
+  .stort-brev {
+    width: 100%;
+    margin-bottom: 32px;
+    padding: 28px 22px;
+  }
+
+  .stort-brev .tape {
+    left: 30%;
+  }
+
+  .brev-hoved .fra {
+    font-size: 15px;
+  }
+
+  .stort-brev h3 {
+    font-size: 21px;
+  }
+
+  .stort-brev p, .svar p, .side-boks p {
+    font-size: 17px;
+    margin-top: 16px;
+  }
+
+  .side-boks {
+    padding: 24px;
+    border-radius: 28px;
+  }
+
+  .side-boks h2 {
+    font-size: 28px;
+  }
+
+  .svar .kh {
+    font-size: 22px;
+  }
+
+  .venner {
+    right: -20px;
+    bottom: -110px;
+    width: 340px;
+  }
+
+  .mere {
+    padding: 40px 16px 60px 16px;
+  }
+}
